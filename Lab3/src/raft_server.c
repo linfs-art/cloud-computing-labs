@@ -44,6 +44,11 @@ void raft_set_heap_functions(void *(*_malloc)(size_t),
     __raft_free = _free;
 }
 
+void what_is_this ()
+{
+    int i = 0;
+}
+
 static void __log(raft_server_t *me_, raft_node_t* node, const char *fmt, ...)
 {
     raft_server_private_t* me = (raft_server_private_t*)me_;
