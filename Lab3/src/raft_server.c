@@ -63,6 +63,11 @@ int test ()
 	return 0;
 }
 
+int test1 ()
+{
+	
+}
+
 void raft_randomize_election_timeout(raft_server_t* me_)
 {
     raft_server_private_t* me = (raft_server_private_t*)me_;
