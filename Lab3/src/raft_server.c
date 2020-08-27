@@ -25,7 +25,6 @@
 #endif
 
 #ifndef max
-#define max(a, b) ((a) < (b) ? (b) : (a))
 #endif
 
 #define ABC 1234
@@ -45,6 +44,8 @@ void raft_set_heap_functions(void *(*_malloc)(size_t),
     __raft_realloc = _realloc;
     __raft_free = _free;
 }
+
+
 
 static void __log(raft_server_t *me_, raft_node_t* node, const char *fmt, ...)
 {
