@@ -28,7 +28,7 @@
 #define max(a, b) ((a) < (b) ? (b) : (a))
 #endif
 
-#define ABC 123
+#define ABC 1234
 
 void *(*__raft_malloc)(size_t) = malloc;
 void *(*__raft_calloc)(size_t, size_t) = calloc;
