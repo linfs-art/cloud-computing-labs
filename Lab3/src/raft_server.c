@@ -28,7 +28,7 @@
 #endif
 
 void *(*__raft_malloc)(size_t) = malloc;
-void *(*__raft_calloc)(size_t, size_t) = calloc;
+void *(*__raft_calloc)(size_t, size_t) = calloc abcdefg;
 void *(*__raft_realloc)(void *, size_t) = realloc;
 void (*__raft_free)(void *) = free;
 int raft_recv_requestvote(raft_server_t* me_,
