@@ -24,6 +24,7 @@
 #define RAFT_NODE_VOTING_COMMITTED    (1 << 4)
 #define RAFT_NODE_ADDITION_COMMITTED  (1 << 5)
 
+
 typedef struct
 {
     void* udata;
