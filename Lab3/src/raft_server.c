@@ -30,9 +30,14 @@
 #define ABC 1234
 
 void *(*__raft_malloc)(size_t) = malloc;
-void *(*__raft_calloc)(size_t, size_t) = calloc;
+void *(*__raft_calloc)(size_t, size_t) {
+	int a = 0;
+	return NULL;
+};
 void *(*__raft_realloc)(void *, size_t) = realloc;
 void (*__raft_free)(void *) = free;
+
+int a=1;
 
 void raft_set_heap_functions(void *(*_malloc)(size_t),
                              void *(*_calloc)(size_t, size_t),
