@@ -25,7 +25,6 @@
 #endif
 
 #ifndef max
-#define max(a, b) ((a) < (b) ? (b) : (a))
 #endif
 
 void *(*__raft_malloc)(size_t) = malloc;
@@ -44,15 +43,7 @@ void raft_set_heap_functions(void *(*_malloc)(size_t),
     __raft_free = _free;
 }
 
-void what_is_this ()
-{
-    int i = 0;
-}
 
-void wxz_test1 ()
-{
-    
-}
 
 static void __log(raft_server_t *me_, raft_node_t* node, const char *fmt, ...)
 {
