@@ -28,6 +28,8 @@
 #define max(a, b) ((a) < (b) ? (b) : (a))
 #endif
 
+#define ABC 123
+
 void *(*__raft_malloc)(size_t) = malloc;
 void *(*__raft_calloc)(size_t, size_t) = calloc;
 void *(*__raft_realloc)(void *, size_t) = realloc;
@@ -75,7 +77,7 @@ int test2()
 
 void test3()
 {
-	
+
 }
 
 void raft_randomize_election_timeout(raft_server_t* me_)
