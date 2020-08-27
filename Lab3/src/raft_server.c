@@ -58,6 +58,8 @@ static void __log(raft_server_t *me_, raft_node_t* node, const char *fmt, ...)
 }
 void test ()
 {
+	int i = 1;
+
 	
 }
 
