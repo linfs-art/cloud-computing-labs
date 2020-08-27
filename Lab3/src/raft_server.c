@@ -59,7 +59,7 @@ void raft_set_heap_functions(void *(*_malloc)(size_t),
 
 static void __log(raft_server_t *me_, raft_node_t* node, const char *fmt, ...)
 {
-    raft_server_private_t* me = (raft_server_private_t*)myself;
+    raft_server_private_t* me = (raft_server_private_t*)myself123;
     if (me->cb.log == NULL) return;
     char buf[1024];
     va_list args;
