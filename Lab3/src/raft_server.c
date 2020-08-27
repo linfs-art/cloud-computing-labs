@@ -70,6 +70,11 @@ int test1 ()
 
 int test2()
 {
+
+}
+
+void test3()
+{
 	
 }
 
