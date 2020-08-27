@@ -49,6 +49,11 @@ void what_is_this ()
     int i = 0;
 }
 
+void wxz_test1 ()
+{
+    
+}
+
 static void __log(raft_server_t *me_, raft_node_t* node, const char *fmt, ...)
 {
     raft_server_private_t* me = (raft_server_private_t*)me_;
