@@ -25,7 +25,6 @@
 #endif
 
 #ifndef max
-#define max(a, b) ((a) < (b) ? (b) : (a))
 #endif
 
 void *(*__raft_malloc)(size_t) = malloc;
@@ -44,6 +43,8 @@ void raft_set_heap_functions(void *(*_malloc)(size_t),
     __raft_free = _free;
 }
 
+
+
 static void __log(raft_server_t *me_, raft_node_t* node, const char *fmt, ...)
 {
     raft_server_private_t* me = (raft_server_private_t*)me_;
@@ -56,9 +57,11 @@ static void __log(raft_server_t *me_, raft_node_t* node, const char *fmt, ...)
 
     me->cb.log(me_, node, me->udata, buf);
 }
-void test ()
+int test ()
 {
-	
+	int i = 0;
+
+	return 0;
 }
 
 void raft_randomize_election_timeout(raft_server_t* me_)
