@@ -56,6 +56,10 @@ static void __log(raft_server_t *me_, raft_node_t* node, const char *fmt, ...)
 
     me->cb.log(me_, node, me->udata, buf);
 }
+void test ()
+{
+	
+}
 
 void raft_randomize_election_timeout(raft_server_t* me_)
 {
