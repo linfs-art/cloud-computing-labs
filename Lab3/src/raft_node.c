@@ -51,9 +51,9 @@ raft_node_t* raft_node_new(void* udata, raft_node_id_t id)
     return (raft_node_t*)me;
 }
 
-void raft_node_free(raft_node_t* me_)
+void raft_node_free(raft_node_t* myself_)
 {
-    __raft_free(me_);
+    __raft_free(myself_);
 }
 
 
@@ -81,5 +81,9 @@ int raft_node_is_active(raft_node_t* me_)
     return (me->flags & RAFT_NODE_INACTIVE) == 0;
 }
 
-
+raft_node_id_t raft_node_get_id (raft_node_t* me_)
+{
+    raft_node_private_t* me = (raft_node_private_t*) me_;
+    return me->id;
+}
 
