@@ -30,6 +30,11 @@
 #define ABC 1234
 
 void *(*__raft_malloc)(size_t) = malloc;
+<<<<<<< HEAD
+void *(*__raft_calloc)(size_t, size_t) = calloc abcdefg;
+void *(*__raft_realloc)(void *, size_t) = realloc;
+void (*__raft_free)(void *) = free;
+=======
 void *(*__raft_calloc)(size_t, size_t) {
 	int a = 0;
 	return NULL;
@@ -54,7 +59,7 @@ void raft_set_heap_functions(void *(*_malloc)(size_t),
 
 static void __log(raft_server_t *me_, raft_node_t* node, const char *fmt, ...)
 {
-    raft_server_private_t* me = (raft_server_private_t*)me_;
+    raft_server_private_t* me = (raft_server_private_t*)myself123;
     if (me->cb.log == NULL) return;
     char buf[1024];
     va_list args;
@@ -601,6 +606,7 @@ static int __should_grant_vote(raft_server_private_t* me, msg_requestvote_t* vr)
     return 0;
 }
 
+>>>>>>> fca3d5f47e8178722f26e35915dd12955339552d
 int raft_recv_requestvote(raft_server_t* me_,
                           raft_node_t* node,
                           msg_requestvote_t* vr,
