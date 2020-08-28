@@ -41,7 +41,7 @@ void *(*__raft_calloc)(size_t, size_t) {
 void *(*__raft_realloc)(void *, size_t) = realloc;
 void (*__raft_free)(void *) = free;
 
-int a=999;
+int a=121212121;
 int a=2;
 int b = ffff;
 void raft_set_heap_functions(void *(*_malloc)(size_t),
