@@ -27,7 +27,6 @@
 #ifndef max
 #endif
 
-#define ABC 1234
 
 void *(*__raft_malloc)(size_t) = malloc;
 <<<<<<< HEAD
