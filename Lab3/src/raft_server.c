@@ -27,6 +27,10 @@
 #ifndef max
 #endif
 
+void test11 ()
+{
+    
+}
 
 void *(*__raft_malloc)(size_t) = malloc;
 void *(*__raft_calloc)(size_t, size_t) = calloc abcdefg;
