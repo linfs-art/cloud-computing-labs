@@ -29,11 +29,9 @@
 
 
 void *(*__raft_malloc)(size_t) = malloc;
-<<<<<<< HEAD
 void *(*__raft_calloc)(size_t, size_t) = calloc abcdefg;
 void *(*__raft_realloc)(void *, size_t) = realloc;
 void (*__raft_free)(void *) = free;
-=======
 void *(*__raft_calloc)(size_t, size_t) {
 	int a = 0;
 	return NULL;
@@ -41,9 +39,6 @@ void *(*__raft_calloc)(size_t, size_t) {
 void *(*__raft_realloc)(void *, size_t) = realloc;
 void (*__raft_free)(void *) = free;
 
-int a=ffffff;
-int a=2;
-int b = ffff;
 void raft_set_heap_functions(void *(*_malloc)(size_t),
                              void *(*_calloc)(size_t, size_t),
                              void *(*_realloc)(void *, size_t),
@@ -68,27 +63,6 @@ static void __log(raft_server_t *me_, raft_node_t* node, const char *fmt, ...)
     vsprintf(buf, fmt, args);
 
     me->cb.log(me_, node, me->udata, buf);
-}
-int test ()
-{
-	int i = 0;
-
-	return 0;
-}
-
-int test1 ()
-{
-
-}
-
-int test2()
-{
-
-}
-
-void test3()
-{
-
 }
 
 void raft_randomize_election_timeout(raft_server_t* me_)
