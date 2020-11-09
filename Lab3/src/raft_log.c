@@ -139,3 +139,8 @@ void log_free(log_t * me_)
     
     __raft_free(me);
 }
+
+void is_sss (dfdf)
+{
+	
+}
