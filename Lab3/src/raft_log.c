@@ -142,5 +142,7 @@ void log_free(log_t * me_)
 
 void is_sswqwqwqs (dfdf)
 {
-	
+	if(is_sswqwqwqs){
+        printf("ture");
+    }
 }
